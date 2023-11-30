@@ -1,13 +1,16 @@
 #!/usr/bin/python3
 """
-this function returns a list of lists of integers representing the Pascal’s triangle of n
+this function returns a list of lists of integers
+representing the Pascal’s triangle of n
 """
 
 
 def pascal_triangle(n):
+
     if n <= 0:
         return []
     pascal_triangle = [0] * n
+
     for i in range(n):
         # define a row and fill first and last idx with 1
         new_row = [0] * (i + 1)

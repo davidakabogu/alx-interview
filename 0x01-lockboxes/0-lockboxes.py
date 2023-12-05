@@ -14,14 +14,14 @@ def canUnlockAll(boxes):
     i = 0
 
     while i < length:
-        oldi = i
+        old_i = i
         opened_boxes.append(i)
         keys.update(boxes[i])
         for key in keys:
             if key != 0 and key < length and key not in opened_boxes:
                 i = key
                 break
-        if oldi != i:
+        if old_i != i:
             continue
         else:
             break
